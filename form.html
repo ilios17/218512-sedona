@@ -5,9 +5,9 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--main">
       <div class="page-header__logo">
-        <img src="img/logo.svg" width="370" height="153" alt="Седона">
+        <a src="#"><img src="img/logo.svg" width="370" height="153" alt="Седона"></a>
       </div>
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"></button>
@@ -21,89 +21,102 @@
         </div>
       </nav>
     </header>
-    <form class="feedback" action="#" method="get">
-      <div class="feedback__user-name">
+    <form class="feedback" action="https://echo.htmlacademy.ru/" method="get">
+      <header class="feedback__header">
+        <h1 class="feedback__instruction">Оставьте свой отзыв</h1>
+        <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+      <div class="Feedback__user-name">
         <p class="feedback__instruction">Представьтесь:</p>
         <label>
           <span>ИМЯ*:</span><br>
-          <input type="text" name="name" placeholder="Представьтесь, пожалуйста" onfocus="placeholder" onblur="placeholder='Представьтесь, пожалуйста">
+          <input class="input-name"type="text" name="name" placeholder="Петр" onfocus="placeholder" onblur="placeholder=Петр">
         </label>
         <label>
           <span>ФАМИЛИЯ*:</span><br>
-          <input type="text" name="familyname" placeholder="Для отправки ответа" onfocus="placeholder" onblur="placeholder='Для отправки ответа">
+          <input class="input-familyname" type="text" name="familyname" placeholder="Иванов" onfocus="placeholder" onblur="placeholder=Иванов">
         </label>
         <label>
           <span>Отчество:</span>
-          <input type="text" name="secondname" placeholder="Для отправки ответа" onfocus="placeholder" onblur="placeholder='Для отправки ответа">
+          <input class="input-secondname" type="text" name="secondname" placeholder="Александрович" onfocus="placeholder" onblur="placeholder=Александрович">
         </label>
       </div>
-      <div class="feedback__user-contacts">
+      <div class="">
        <p class="feedback__instruction">Контактная информация:</p>
        <label>
          <span>Контактный телефон*:</span><br>
-         <input type="tel" name="tel" placeholder="Введите телефон" onfocus="placeholder=Введите телефон" onblur="placeholder='Введите телефон" required>
+         <input class="input-tel" type="tel" name="tel" placeholder="Введите телефон" onfocus="placeholder=Введите телефон" onblur="placeholder=Введите телефон" required>
        </label>
        <span class="feedback__error-phone">Ошибка, перепроверьте номер</span>
        <label>
          <span>Электронная почта*:</span><br>
-         <input type="email" name="email" placeholder="Введите e-mail" onfocus="placeholder=Введите e-mail" onblur="placeholder='Введите e-mail" required>
+         <input class="input-email" type="email" name="email" placeholder="Введите e-mail" onfocus="placeholder=Введите e-mail" onblur="placeholder=Введите e-mail" required>
        </label>
      </div>
      <div class="feedback__user-impressions">
        <p class="feedback__instruction">ВАше Общее впечатление:</p>
        <div class="feedback__radio">
-         <input id="radio1" type="radio" name="impression" value="good">
+         <input class="input-impression" id="radio1" type="radio" name="impression" value="good">
          <label for="radio1">Скорее положительное</label>
        </div>
        <div class="feedback__radio">
-         <input id="radio2" type="radio" name="impression" value="bad">
+         <input class="input-impression" id="radio2" type="radio" name="impression" value="bad">
          <label for="radio2">Скорее отрицательное</label>
        </div>
        <div class="feedback__radio">
-         <input id="radio3" type="radio" name="impression" value="unknown">
+         <input class="input-impression" id="radio3" type="radio" name="impression" value="unknown">
          <label for="radio3">Затрудняюсь ответить</label>
       </div>
     </div>
     <div class="feedback__user-sightseeing">
       <p class="feedback__instruction">посещенные достопримечательности:</p>
       <div class="feedback__checkbox">
-        <input id="checkbox1" type="checkbox" name="Bridge">
+        <input class="input-sightseeing"id="checkbox1" type="checkbox" name="Bridge">
         <label for="checkbox1">Мост Дьявола</label>
       </div>
       <div class="feedback__checkbox">
-        <input id="checkbox2" type="checkbox" name="Park">
+        <input class="input-sightseeing" id="checkbox2" type="checkbox" name="Park">
         <label for="checkbox2">Слайд-парк</label>
       </div>
       <div class="feedback__checkbox">
-        <input id="checkbox3" type="checkbox" name="Mountain">
+        <input class="input-sightseeing" id="checkbox3" type="checkbox" name="Mountain">
         <label for="checkbox3">Гора-Колокол</label>
       </div>
       <div class="feedback__checkbox">
-        <input id="checkbox4" type="checkbox" name="Rocks">
+        <input class="input-sightseeing" id="checkbox4" type="checkbox" name="Rocks">
         <label for="checkbox4">Красные скалы</label>
       </div>
     </div>
-    <div class="feedback__user-text">
+    <div class="feedback__user-emotions">
       <p class="feedback__instruction">Опишите свои эмоции:</p>
-      <textarea name="textletter" cols="61" rows="6" placeholder="Опишите подробно все свои восторги" onfocus="placeholder='';" onblur="placeholder='Опишите подробно все свои восторги ';"></textarea>
+      <textarea class="textarea--emotions" name="textletter" cols="61" rows="6" placeholder="Опишите подробно все свои восторги" onfocus="placeholder='';" onblur="placeholder='Опишите подробно все свои восторги ';"></textarea>
     </div>
-    <div class="feedback__btn btn">
-      <button class="btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-    </div>
+    <button class="feedback__btn btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
   </form>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <b class="page-footer__tag"></b>
+      <b class="page-footer__tag">#visitSEDONA</b>
       <p class="page-footer__social">
         <span class="social-links">
-          <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social-link social-link--vk" href="https://vk.com/htmlacademy"></a>
+          <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy"></a>
+          <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy"></a>
         </span>
       </p>
       <p class="page-footer__copyright">
-       Разработано:<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+       Разработано:<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
      </p>
    </div>
  </footer>
+ <div class="module-error">
+   <p class="module-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+   <p class="module-error__massege">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+   <button class="module-error__btn btn">ok<btn>
+ </div>
+ <div class="module-accepted">
+   <p class="module-accepted__title">Ваш отзыв отправлен!</p>
+   <p class="module-accepted__massege">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+В ближайшее время мы опубликуем его на сайте.</p>
+   <button class="module-accepted__btn btn">ЗАкРЫТЬ ОКНО<btn>
+ </div>
 </body>
