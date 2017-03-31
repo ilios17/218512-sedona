@@ -1,0 +1,32 @@
+@import "variables.less";
+@import "mixins.less";
+
+.main-nav {
+  width: 320px;
+
+  margin: 0 auto;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__item {
+  padding: 16px 0;
+
+  .main-nav-text();
+  .font-bold();
+  .text-center();
+  .uppercase();
+
+  .bg-color(@blue);
+  color: @white;
+  a {
+    text-decoration: none;
+
+    color: @white;
+  }
+}
