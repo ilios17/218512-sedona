@@ -1,0 +1,50 @@
+.input-sightseeing {
+  display: none;
+}
+
+.input-sightseeing__label {
+  padding-left: 79px;
+  font-size: 18px;
+  line-height: 26px;
+
+  .font-bold();
+
+  color: @black;
+}
+
+.input-sightseeing__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 56px;
+  height: 56px;
+
+  background: #f2f2f2;
+  border-radius: 5%;
+
+}
+
+.input-sightseeing:checked+.input-sightseeing__label::after {
+  content: url(../img/icon-tick.svg);
+  position: absolute;
+  left: 19px;
+  top: 19px;
+
+  display: none;
+}
+
+#checkbox1:checked ~ label[for="checkbox1"]::after,
+#checkbox2:checked ~ label[for="checkbox2"]::after,
+#checkbox3:checked ~ label[for="checkbox3"]::after,
+#checkbox4:checked ~ label[for="checkbox4"]::after {
+  display: block;
+}
+
+#checkbox1:checked ~ label[for="checkbox1"]::before,
+#checkbox2:checked ~ label[for="checkbox2"]::before,
+#checkbox3:checked ~ label[for="checkbox3"]::before,
+#checkbox4:checked ~ label[for="checkbox4"]::before {
+  display: block;
+}

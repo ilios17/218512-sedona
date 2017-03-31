@@ -1,0 +1,49 @@
+.module-error{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  height: 280px;
+}
+
+.module-error__title {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+
+  .font-bold();
+  .uppercase();
+
+  color: @black;
+}
+
+.module-error__massege {
+  margin: 0 auto;
+  width: 210px;
+font-size: 14px;
+line-height: 24px;
+
+.font-normal();
+.uppercase();
+
+text-align: center;
+color: @black-light;
+}
+
+.module-error__btn{
+  margin: 0 auto;
+  width: 180px;
+}
+
+@media (min-width: 768px) {
+  .module-error{
+    width: 400px;
+  }
+  .module-error__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .module-error__btn {
+    width: 273px;
+  }
+}

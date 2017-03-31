@@ -1,0 +1,40 @@
+.input-name{
+  font-size: 18px;
+  line-height: 26px;
+  .font-bold();
+
+  margin-left: 14px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  padding-left: 22px;
+
+  width: 208px;
+
+  border: none;
+
+  background: @input-background;
+}
+
+.input-name__label{
+font-size: 14px;
+line-height: 26px;
+
+.font-normal();
+.uppercase();
+
+color: @black-light;
+}
+
+@media (min-width: 768px) {
+  .input-name{
+  width: 194px;
+}
+}
+
+@media (min-width: 1200px){
+  .input-name{
+  width: 328px;
+}
+}

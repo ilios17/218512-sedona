@@ -1,0 +1,78 @@
+.input-impression {
+  display: none;
+}
+
+.input-impression__label {
+  padding-left: 79px;
+  font-size: 18px;
+  line-height: 26px;
+
+  .font-bold();
+
+  color: @black;
+}
+
+.input-impression__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+
+  width: 56px;
+  height: 56px;
+
+  background: #f2f2f2;
+  border-radius: 50%;
+
+}
+
+.input-impression__label::after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 21px;
+
+  display: none;
+
+  width: 22px;
+  height: 22px;
+
+  background: @black-light;
+  border-radius: 50%;
+}
+
+#radio1:checked ~ label[for="radio1"]::after,
+#radio2:checked ~ label[for="radio2"]::after,
+#radio3:checked ~ label[for="radio3"]::after {
+  display: block;
+}
+
+#radio1:checked ~ label[for="radio1"]::before,
+#radio2:checked ~ label[for="radio2"]::before,
+#radio3:checked ~ label[for="radio3"]::before {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .input-impression__label::after {
+    left: 17px;
+    top: 30px
+  }
+  .input-impression__label--last::after{
+    top: 34px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input-impression__label::before {
+   left: 5px;
+   bottom: 5px;
+ }
+ .input-impression__label::after{
+   left: 22px;
+ }
+ .input-impression__label--last::after{
+   top: 35px;
+ }
+
+}
