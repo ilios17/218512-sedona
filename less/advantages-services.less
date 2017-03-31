@@ -1,0 +1,122 @@
+.advantages-services {
+  width: 280px;
+  padding: 20px 6%;
+}
+
+.advantages-services__service {
+  position: relative;
+  padding: 8px 0 8px 50px;
+  text-align: center;
+}
+
+.advantages-services__service-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+
+  .font-bold();
+  .uppercase();
+
+  color: @black;
+  align-items: flex-end;
+}
+
+.advantages-services__description {
+  font-size: 14px;
+  line-height: 21px;
+
+  .font-normal();
+  .uppercase();
+
+  color: @black-light;
+
+}
+
+.advantages-services__service::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    left: 0;
+    top: 0;
+  }
+
+.advantages-services__service--home::before {
+    content: url(../img/icon-house.svg);
+  }
+
+.advantages-services__service--gifts::before {
+    content: url(../img/icon-gift.svg);
+  }
+
+.advantages-services__service--food::before {
+    content: url(../img/icon-burger.svg);
+  }
+
+@media (min-width: 768px) {
+  .advantages-services{
+    padding: 0;
+    display: flex;
+    width: 768px;
+  }
+  .advantages-services__service--home {
+    order: 1;
+  }
+  .advantages-services__service--gifts {
+    order: 3;
+  }
+  .advantages-services__service--food {
+    order: 2;
+  }
+
+  .advantages-services__service {
+    display: inline-block;
+    padding: 160px 5.5% 50px;
+    width: 256px;
+  }
+
+  .advantages-services__service::before{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    width: 76px;
+}
+.advantages-services__service--gifts::before{
+  top: 56px;
+  width: 65px;
+}
+
+.advantages-services__service--food::before{
+  top: 62px;
+}
+
+  .advantages-services__service-title {
+    margin: 0 auto;
+    font-size: 21px;
+  }
+
+  .advantages-services__description {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 11px;
+    padding-left: 0;
+    text-align: center;
+    width: 165px;
+    &--smaller {
+      width: 155px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-services {
+    width: 1200px;
+ }
+
+.advantages-services__service {
+  width: 400px;
+ }
+
+.advantages-services__description {
+  width: 260px;
+ }
+}
+}
