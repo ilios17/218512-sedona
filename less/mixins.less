@@ -18,11 +18,28 @@
   font-weight: normal;
 }
 
-.main-nav-text() {
-  font-size: 18px;
-  line-height: 40px;
-}
-
 .uppercase() {
   text-transform: uppercase;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+  }
 }
