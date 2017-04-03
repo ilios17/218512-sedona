@@ -1,13 +1,20 @@
 .module-error{
+
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 320px;
   height: 280px;
+
+  box-shadow: 0 5px 10px 1px #e1e1e1;
+
+  display: none;
 }
 
 .module-error__title {
   margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
 
@@ -19,15 +26,17 @@
 
 .module-error__massege {
   margin: 0 auto;
+  padding: 0 30px;
+  padding-bottom: 25px;
   width: 210px;
-font-size: 14px;
-line-height: 24px;
+  font-size: 14px;
+  line-height: 24px;
 
-.font-normal();
-.uppercase();
+ .font-normal();
+ .uppercase();
 
-text-align: center;
-color: @black-light;
+ text-align: center;
+ color: @black-light;
 }
 
 .module-error__btn{

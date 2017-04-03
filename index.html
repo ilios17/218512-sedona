@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/outlines.css">
     <title>html academy: седона</title>
   </head>
   <body>
@@ -18,7 +17,7 @@
               <li class="main-nav__item main-nav__item--active"><a>главная</a></li>
               <li class="main-nav__item"><a href="photo.html">фото и видео</a></li>
               <li class="main-nav__item main-nav__item--logo">
-                <a src="#">
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
                     <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -27,7 +26,7 @@
                 </a>
               </li>
               <li class="main-nav__item"><a href="form.html">форма отзыва</a></li>
-              <li class="main-nav__item"><a href="">html academy</a></li>
+              <li class="main-nav__item main-nav__item--last"><a href="">html academy</a></li>
             </ul>
           </div>
         </nav>
@@ -62,11 +61,11 @@
             </div>
             <div class="advantages-services__service advantages-services__service--gifts">
               <h3 class="advantages-services__service-title">сувениры</h3>
-              <p class="advantages-services__description">не только китайского, но и местного производства!</p>
+              <p class="advantages-services__description"><span>не только китайского,</span>но и местного производства!</p>
             </div>
             <div class="advantages-services__service advantages-services__service--food">
               <h3 class="advantages-services__service-title">еда</h3>
-              <p class="advantages-services__description advantages-services__description--smaller">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="advantages-services__description advantages-services__description--food"><span>всегда заказывайте фирменный бургер,</span> вы не разочаруетесь!</p>
             </div>
           </section>
           <section class="advantages-photo">
@@ -109,9 +108,8 @@
             <p class="hotel__information"><span>укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a class="hotel__find-btn btn" href="#">найти гостиницу</a>
           </div>
-          <div class="hotel_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209200.23519731994!2d-111.77719890346403!3d34.987834255738555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3a0x5548c523fa6c8efd!2z0khqtdc00l7qvdcwlcdqknga0ljqt9c-0l3qsca4njmzniwg0khqqncq!5e0!3m2!1sru!2sru!4v1488812617736"
-            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <div class="hotel__map-container">
+            <iframe class="hotel__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209616.4485374179!2d-111.81024691211249!3d34.82463010383283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1491237842888" width="800" height="600" style="border:0" allowfullscreen></iframe>
           </div>
         </section>
       </main>
@@ -137,7 +135,12 @@
               </a>
             </span>
           </p>
-          <p class="page-footer__copyright">разработано<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a></p>
+          <p class="page-footer__copyright">разработано
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="page-footer__copyright-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40px" height="53px"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path>
+              </svg>
+            </a>
+          </p>
         </div>
       </footer>
     </div>

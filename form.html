@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/outlines.css">
     <title>html academy: седона</title>
   </head>
   <body>
@@ -27,7 +26,7 @@
                 </a>
               </li>
               <li class="main-nav__item"><a href="">форма отзыва</a></li>
-              <li class="main-nav__item"><a href="">html academy</a></li>
+              <li class="main-nav__item main-nav__item--last"><a href="">html academy</a></li>
             </ul>
           </div>
         </nav>
@@ -42,29 +41,29 @@
             <p class="feedback__description">помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
           <fieldset class="feedback-user-name">
+            <legend class="form-instuction form-instuction--user-name">представьтесь:</legend>
             <div class="feedback-user-name__wrapper">
-              <legend class="feedback__instruction feedback__instruction--user-name">представьтесь:</legend>
               <p class="feedback-user-name__container">
                 <label class="input-name__label" for="name">имя*:</label>
-                <input class="input-name" id="name" type="text" name="name" placeholder="Петр" onfocus="placeholder" onblur="placeholder=петр">
+                <input class="input-name" id="name" type="text" name="name" placeholder="Петр" onfocus="placeholder">
               </p>
               <p class="feedback-user-name__container">
                 <label class="input-familyname__label" for="familyname">фамилия*:</label>
-                <input class="input-familyname" id="familyname" type="text" name="familyname" placeholder="Иванов" onfocus="placeholder" onblur="placeholder=иванов">
+                <input class="input-familyname" id="familyname" type="text" name="familyname" placeholder="Иванов" onfocus="placeholder">
               </p>
               <p class="feedback-user-name__container feedback-user-name__container--last">
                 <label class="input-secondname__label" for="secondname">отчество:</label>
-                <input class="input-secondname" id="secondname" type="text" name="secondname" placeholder="Александрович" onfocus="placeholder" onblur="placeholder=александрович">
+                <input class="input-secondname" id="secondname" type="text" name="secondname" placeholder="Александрович" onfocus="placeholder">
               </p>
             </div>
           </fieldset>
           <fieldset class="feedback-contacts">
+            <legend class="form-instuction form-instuction--feedback-contacts form-instuction--decoration">контактная информация:</legend>
             <div class="feedback-contacts__wrapper">
-              <legend class="feedback__instruction feedback__instruction--feedback-contacts">контактная информация:</legend>
               <div class="feedback-contacts__phone">
                 <span class="feedback-contacts__description"> <span class="feedback-contacts__description feedback-contacts__description--hidden">контактный</span> телефон*:</span>
                 <p class="feedback-contacts__container">
-                  <input class="input-tel" id="input-tel" type="tel" name="tel" placeholder="Введите телефон" onfocus="placeholder=введите телефон" onblur="placeholder=Введите телефон" required>
+                  <input class="input-tel" id="input-tel" type="tel" name="tel" placeholder="Введите телефон">
                   <label class="input-tel__icon" for="input-tel"></label>
                 </p>
                 <span class="feedback-contacts__error-phone">Ошибка, перепроверьте номер</span>
@@ -72,17 +71,17 @@
               <div class="feedback-contacts__email">
                 <span class="feedback-contacts__description feedback-contacts__description--email">электронная почта*:</span>
                 <p class="feedback-contacts__container">
-                  <input class="input-email" id="input-email" type="email" name="email" placeholder="Введите e-mail" onfocus="placeholder=введите e-mail" onblur="placeholder=Введите e-mail" required>
+                  <input class="input-email" id="input-email" type="email" name="email" placeholder="Введите e-mail">
                   <label class="input-email__icon" for="input-email"></label>
                 </p>
               </div>
             </div>
           </fieldset>
           <fieldset class="user-impressions">
+            <legend class="form-instuction form-instuction--user-impressions">ваше общее впечатление:</legend>
             <div class="user-impressions__wrapper">
-              <legend class="feedback__instruction feedback__instruction--user-impressions">ваше общее впечатление:</legend>
               <p class="user-impressions__container">
-                <input class="input-impression" id="radio1" type="radio" name="impression" value="good">
+                <input class="input-impression" id="radio1" type="radio" name="impression" value="good" checked="checked">
                 <label class="input-impression__label" for="radio1">Скорее положительное</label>
               </p>
               <p class="user-impressions__container">
@@ -92,19 +91,19 @@
               <p class="user-impressions__container user-impressions__container--last">
                 <input class="input-impression" id="radio3" type="radio" name="impression" value="unknown">
                 <label class="input-impression__label input-impression__label--last" for="radio3">Затрудняюсь ответить</label>
-              </dp>
+              </p>
             </div>
           </fieldset>
           <fieldset class="user-sightseeing">
+            <legend class="form-instuction form-instuction--user-sightseeing form-instuction--decoration form-instuction--decoration--smaller">посещенные достопримечательности:</legend>
             <div class="user-sightseeing__wrapper">
-              <legend class="feedback__instruction feedback__instruction--user-sightseeing">посещенные достопримечательности:</legend>
               <div class="user-sightseeing__flex-container">
                 <div class="user-sightseeing__container user-sightseeing__container--first">
-                  <input class="input-sightseeing"id="checkbox1" type="checkbox" name="bridge">
+                  <input class="input-sightseeing" id="checkbox1" type="checkbox" name="bridge" checked="checked">
                   <label class="input-sightseeing__label" for="checkbox1">Мост Дьявола</label>
                 </div>
                 <div class="user-sightseeing__container user-sightseeing__container--third">
-                  <input class="input-sightseeing" id="checkbox2" type="checkbox" name="park">
+                  <input class="input-sightseeing" id="checkbox2" type="checkbox" name="park" checked="checked">
                   <label class="input-sightseeing__label" for="checkbox2">Слайд-парк</label>
                 </div>
                 <div class="user-sightseeing__container user-sightseeing__container--second">
@@ -112,15 +111,15 @@
                   <label class="input-sightseeing__label" for="checkbox3">Гора-Колокол</label>
                 </div>
                 <div class="user-sightseeing__container user-sightseeing__container--fourth">
-                  <input class="input-sightseeing" id="checkbox4" type="checkbox" name="rocks">
+                  <input class="input-sightseeing" id="checkbox4" type="checkbox" name="rocks" checked="checked">
                   <label class="input-sightseeing__label" for="checkbox4">Красные скалы</label>
                 </div>
               </div>
             </div>
           </fieldset>
           <fieldset class="user-emotions">
+            <legend class="form-instuction form-instuction--user-emotions form-instuction--decoration">опишите свои эмоции:</legend>
             <div class="user-emotions__wrapper">
-              <legend class="feedback__instruction feedback__instruction--user-emotions">опишите свои эмоции:</legend>
               <textarea class="emotions-textarea"  name="textletter" placeholder="Опишите подробно все свои восторги" onfocus="placeholder='';" onblur="placeholder='Опишите подробно все свои восторги ';"></textarea>
             </div>
           </fieldset>
@@ -152,7 +151,12 @@
               </a>
             </span>
           </p>
-          <p class="page-footer__copyright">разработано<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a></p>
+          <p class="page-footer__copyright">разработано
+            <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="page-footer__copyright-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40px" height="53px"><path d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path>
+              </svg>
+            </a>
+          </p>
         </div>
       </footer>
       <div class="module-error">

@@ -70,7 +70,7 @@
 
   .advantages-services__service {
     display: inline-block;
-    padding: 160px 5.5% 50px;
+    padding: 160px 5% 50px;
     width: 256px;
   }
 
@@ -95,14 +95,19 @@
   }
 
   .advantages-services__description {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 11px;
     padding-left: 0;
     text-align: center;
     width: 165px;
-    &--smaller {
+    &--food {
       width: 155px;
+  }
+  .advantages-services__description span{
+    width: 165px;
   }
 }
 
@@ -113,10 +118,23 @@
 
 .advantages-services__service {
   width: 400px;
+  padding: 160px 5% 73px;
  }
 
 .advantages-services__description {
   width: 260px;
+ }
+
+ .advantages-services__description span{
+   width: 260px;
+ }
+
+ .advantages-services__description--food{
+   width: 290px;
+ }
+
+ .advantages-services__description--food span{
+   width: 290px;
  }
 }
 }

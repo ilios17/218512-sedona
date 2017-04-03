@@ -1,0 +1,107 @@
+.form-instuction {
+padding-bottom: 20px;
+font-size: 18px;
+line-height: 26px;
+
+.font-bold();
+.uppercase();
+text-align: center;
+
+color: @black;
+}
+
+.form-instuction---user-sightseeng{
+  padding-bottom: 18px;
+}
+
+.form-instuction--user-emotions{
+  padding-bottom: 18px;
+}
+
+.form-instuction--user-contacts{
+  margin-top: 18px;
+}
+
+@media (min-width: 768px) {
+.form-instuction {
+  font-size: 21px;
+  &--user-name {
+    align-self: flex-start;
+    padding-left: 57px;
+    margin-bottom: 38px;
+  }
+  &--user-sightseeing {
+    padding-left: 29%;
+    padding-right: 29%;
+    padding-bottom: 43px;
+    text-align: center;
+  }
+  &--user-emotions {
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+  &--user-impressions {
+    margin-bottom: 29px;
+    padding-left: 0;
+  }
+  &--feedback-contacts{
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+}
+
+.form-instuction--decoration {
+  position: relative;
+  width: 100%;
+}
+
+.form-instuction--decoration--smaller {
+  width: 280px;
+}
+
+.form-instuction--decoration::after,
+.form-instuction--decoration::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background: #dbdbdb;
+  transform: translateY(-50%);
+  top: 31%;
+}
+
+.form-instuction--decoration::after{
+  right: 0;
+}
+
+.form-instuction--decoration--smaller::before{
+  left: 0;
+}
+.form-instuction--decoration--smaller::after{
+  left: auto;
+}
+}
+
+@media (min-width: 1200px) {
+
+.form-instuction--user-name{
+  padding-left: 78px;
+}
+
+.form-instuction--user-sightseeing {
+  padding-left: 35%;
+  padding-right: 35%;
+}
+
+.form-instuction--user-impressions {
+  padding-left: 80px;
+}
+
+.form-instuction--feedback-contacts{
+  width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+}

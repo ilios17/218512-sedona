@@ -5,12 +5,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
+  grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-contrib-clean");
 
   grunt.initConfig({
     less: {
       style: {
         files: {
-          "css/style.css": "less/style.less"
+          "build/css/style.css": "less/style.less"
         }
       }
     },
@@ -24,7 +26,7 @@ module.exports = function(grunt) {
             ]})
           ]
         },
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
@@ -32,12 +34,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "build/",
           watchTask: true,
           notify: false,
           open: true,
@@ -52,8 +54,43 @@ module.exports = function(grunt) {
         files: ["less/**/*.less"],
         tasks: ["less", "postcss"]
       }
+    },
+
+    copy: {
+      build: {
+        files: [{
+            expand: true,
+            src: [
+              "fonts/**/*.{woff,woff2}",
+              "img/**",
+              "js/**",
+              "*.html"
+            ],
+            dest: "build"
+          }]
+      },
+
+      html: {
+        files: [{
+            expand: true,
+            src: [
+              "*.html"
+            ],
+            dest: "build"
+          }]
+      }
+    },
+
+    clean: {
+      build: ["build"]
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "less",
+    "postcss"
+  ]);
 };

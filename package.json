@@ -8,13 +8,15 @@
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
     "grunt-contrib-less": "1.4.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "1.0.0",
     "grunt-postcss": "0.8.0",
     "@htmlacademy/editorconfig-cli": "0.1.x"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt less && grunt postcss",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "editorconfig-cli": [
