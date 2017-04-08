@@ -1,7 +1,11 @@
 .page-footer {
   margin: 0 auto;
-  padding-bottom: 14px;
+  padding-top: 53px;
   width: 320px;
+}
+
+.page-footer--index{
+  padding-top: 0;
 }
 
 .page-footer__wrapper {
@@ -12,7 +16,6 @@
 }
 
 .page-footer__tag {
-  margin-top: 74px;
   padding-left: 70px;
   font-size: 21px;
   line-height: 26px;
@@ -25,21 +28,29 @@
 
 .page-footer__copyright {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-left: 74px;
+
   font-size: 14px;
   line-height: 26px;
   .uppercase();
   .font-normal();
-  padding-left: 74px;
-  margin-top: 24px;
 
   color: @black-light;
+}
+
+.page-footer__copyright-link{
+  padding-left: 7px;
+  padding-top: 5px
 }
 
 @media (min-width: 768px){
   .page-footer {
     padding-bottom: 0;
+    padding-top: 0;
     width: 648px;
   }
   .page-footer__wrapper {
@@ -54,31 +65,60 @@
     margin: 0;
   }
   .page-footer__social {
-    padding-left: 79px;
+    padding-left: 86px;
     width: 256px;
     margin-top: 38px;
-    margin-bottom: 34px;
+    margin-bottom: 38px;
     text-align: center;
   }
 .page-footer__copyright {
-    padding-left: 0;
-    width: 156px;
     margin: 0;
+    padding-left: 60px;
+    width: 156px;
     text-align: right;
+  }
+
+.page-footer__copyright-link{
+    position: relative;
+  }
+
+.page-footer__copyright-icon{
+    position: absolute;
+    top: -24px;
+    left: 8px;
   }
 }
 
 @media (min-width: 1200px){
   .page-footer {
-    width: 960px;
+    width: 1200px;
   }
   .page-footer__wrapper {
-    width: 960px;
+    margin-left: 130px;
+    margin-right: 30px;
+    width: 1025px;
   }
-  .page-footer__tag {
-    padding-left: 13px;
+  .page-footer__wrapper--smaller{
+    width: 946px;
   }
   .page-footer__social {
-    padding-left: 90px;
+    padding-left: 50px;
+  }
+
+  .page-footer__social--form {
+    padding-left: 76px;
+    margin-bottom: 38px;
+  }
+
+  .page-footer__social--index{
+    margin-top: 37px;
+    margin-bottom: 36px;
+  }
+  .page-footer__copyright{
+    padding-left: 70px;
+    justify-content: center;
+  }
+  .page-footer__copyright--form{
+    padding-left: 20px;
   }
 }

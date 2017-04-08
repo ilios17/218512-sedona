@@ -7,6 +7,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-clean");
+  grunt.loadNpmTasks("grunt-csso");
 
   grunt.initConfig({
     less: {
@@ -52,9 +53,20 @@ module.exports = function(grunt) {
     watch: {
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss","csso"]
       }
     },
+
+    csso: {
+     style: {
+       options: {
+         report: "gzip"
+       },
+       files: {
+         "build/css/style.min.css": ["build/css/style.css"]
+       }
+     }
+   },
 
     copy: {
       build: {
@@ -91,6 +103,7 @@ module.exports = function(grunt) {
     "clean",
     "copy",
     "less",
+    "csso",
     "postcss"
   ]);
 };

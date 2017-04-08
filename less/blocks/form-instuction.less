@@ -18,8 +18,8 @@ color: @black;
   padding-bottom: 18px;
 }
 
-.form-instuction--user-contacts{
-  margin-top: 18px;
+.form-instuction--feedback-contacts {
+  padding-top: 18px;
 }
 
 @media (min-width: 768px) {
@@ -29,20 +29,24 @@ color: @black;
     align-self: flex-start;
     padding-left: 57px;
     margin-bottom: 38px;
+
+    text-align: left;
   }
   &--user-sightseeing {
-    padding-left: 29%;
-    padding-right: 29%;
+    padding-left: 28%;
+    padding-right: 28%;
     padding-bottom: 43px;
     text-align: center;
   }
   &--user-emotions {
     margin: 0 auto;
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
   &--user-impressions {
     margin-bottom: 29px;
     padding-left: 0;
+
+    text-align: left;
   }
   &--feedback-contacts{
     margin-top: 0;
@@ -52,6 +56,7 @@ color: @black;
 
 .form-instuction--decoration {
   position: relative;
+  padding-top: 0;
   width: 100%;
 }
 
@@ -64,44 +69,50 @@ color: @black;
   position: absolute;
   content: "";
   display: block;
-  width: 25%;
+  width: 19%;
   height: 1px;
   background: #dbdbdb;
   transform: translateY(-50%);
-  top: 31%;
+  top: 27%;
 }
 
-.form-instuction--decoration::after{
+.form-instuction--decoration::after {
   right: 0;
 }
 
-.form-instuction--decoration--smaller::before{
+.form-instuction--decoration--smaller::before {
   left: 0;
 }
-.form-instuction--decoration--smaller::after{
+.form-instuction--decoration--smaller::after {
   left: auto;
 }
 }
 
 @media (min-width: 1200px) {
 
-.form-instuction--user-name{
-  padding-left: 78px;
-}
+  .form-instuction--decoration::after,
+  .form-instuction--decoration::before {
+    width: 29%;
+    top: 28%;
+  }
 
-.form-instuction--user-sightseeing {
-  padding-left: 35%;
-  padding-right: 35%;
-}
+ .form-instuction--user-name {
+   padding-left: 78px;
+ }
 
-.form-instuction--user-impressions {
-  padding-left: 80px;
-}
+ .form-instuction--user-sightseeing {
+   padding-left: 35%;
+   padding-right: 35%;
+ }
 
-.form-instuction--feedback-contacts{
-  width: 960px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
+ .form-instuction--user-impressions {
+   padding-left: 80px;
+ }
+
+ .form-instuction--feedback-contacts {
+   width: 960px;
+   text-align: center;
+   margin: 0 auto;
+   margin-bottom: 15px;
+ }
 }

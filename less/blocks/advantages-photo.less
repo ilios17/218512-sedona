@@ -1,3 +1,6 @@
+
+
+
 .advantages-photo__text {
   display: flex;
   flex-direction: column;
@@ -5,9 +8,35 @@
   background-color: @blue;
 }
 
+.advantages-photo__text--angle{
+  padding-top: 67px;
+}
+
+.advantages-photo__text--right{
+  padding-top: 38px;
+  padding-bottom: 39px;
+}
+
+.advantages-photo--angle{
+  position: relative;
+}
+
+.advantages-photo--angle::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  background-image: url(../img/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 37px;
+  background-position: bottom;
+}
+
+
 .advantages-photo__title {
  margin: 0 auto;
- padding-top: 41px;
  font-size: 18px;
  line-height: 26px;
 
@@ -39,6 +68,7 @@
 .advantages-photo__number {
   margin: 0 auto  15px;
   padding: 0;
+  padding-top: 10px;
 }
 
 .advantages-photo__image {
@@ -53,6 +83,11 @@
     width: 768px;
     height: 256px;
   }
+
+  .advantages-photo--angle::before{
+    display: none;
+  }
+
   .advantages-photo__title{
     display: flex;
     flex-direction: column;
@@ -98,6 +133,14 @@
     padding-top: 50px;
     width: 400px;
   }
+  .advantages-photo__title {
+    padding: 0;
+  }
+
+  .advantages-photo__number {
+    padding-top: 15px;
+  }
+
   .advantages-photo__image {
     width: 800px;
   }

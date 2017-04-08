@@ -1,12 +1,16 @@
 .advantages-services {
   width: 280px;
-  padding: 20px 6%;
+  padding: 25px 6%;
+  padding-bottom: 16px;
 }
 
 .advantages-services__service {
   position: relative;
   padding: 8px 0 8px 50px;
-  text-align: center;
+}
+
+.advantages-services__service--food{
+  padding-top: 5px;
 }
 
 .advantages-services__service-title {
@@ -35,7 +39,7 @@
 .advantages-services__service::before {
     content: "";
     position: absolute;
-    width: 35px;
+    width: 40px;
     left: 0;
     top: 0;
   }
@@ -46,6 +50,9 @@
 
 .advantages-services__service--gifts::before {
     content: url(../img/icon-gift.svg);
+    width: 32px;
+    left: 6px;
+    top: -3px;
   }
 
 .advantages-services__service--food::before {
@@ -69,8 +76,7 @@
   }
 
   .advantages-services__service {
-    display: inline-block;
-    padding: 160px 5% 50px;
+    padding: 160px 5% 52px;
     width: 256px;
   }
 
@@ -91,6 +97,7 @@
 
   .advantages-services__service-title {
     margin: 0 auto;
+    text-align: center;
     font-size: 21px;
   }
 

@@ -2,7 +2,7 @@
   border: none;
   margin: 0;
   padding: 0;
-  padding-top: 18px;
+  margin-top: 18px;
   padding-bottom: 3px;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -19,15 +19,15 @@
  position: relative;
  display: flex;
  align-items: baseline;
- margin-bottom: 5px;
- padding-top: 14px;
+ margin-bottom: 8px;
+ padding-top: 11px;
  min-height: 60px;
  width: 280px;
 }
 
 @media (min-width: 768px) {
   .user-sightseeing {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     width: 648px;
     order: -2;
     border: none;
@@ -44,6 +44,7 @@
   }
   .user-sightseeing__container{
     margin-bottom: 14px;
+    padding-top: 14px;
     width: 260px;
     &--first{
       order: 1;
@@ -63,7 +64,7 @@
 @media (min-width: 1200px) {
   .user-sightseeing{
     width: 960px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
   .user-sightseeing__wrapper {
     width: 960px;
@@ -74,7 +75,10 @@
     justify-content: space-between;
     }
 
-    .user-sightseeing__container {
-      width: auto;
+  .user-sightseeing__container {
+    width: auto;
+    &--fourth {
+      margin-right: 5px;
     }
+  }
 }

@@ -1,11 +1,18 @@
-.module-error{
+.module-error {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10002;
 
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: auto;
   width: 320px;
   height: 280px;
 
+  background-color: @white;
   box-shadow: 0 5px 10px 1px #e1e1e1;
 
   display: none;
@@ -15,6 +22,8 @@
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 25px;
+  width: 200px;
+
   font-size: 18px;
   line-height: 26px;
 
@@ -26,9 +35,8 @@
 
 .module-error__massege {
   margin: 0 auto;
-  padding: 0 30px;
   padding-bottom: 25px;
-  width: 210px;
+  width: 207px;
   font-size: 14px;
   line-height: 24px;
 
@@ -42,17 +50,37 @@
 .module-error__btn{
   margin: 0 auto;
   width: 180px;
+
+  font-size: 18px;
+  line-height: 26px;
 }
 
 @media (min-width: 768px) {
   .module-error{
     width: 400px;
+    height: 347px;
   }
+
   .module-error__title {
+    margin-top: 15px;
+    padding-bottom: 22px;
+
+    width: 214px;
+
+    text-align: center;
+
     font-size: 30px;
     line-height: 40px;
   }
+
+  .module-error__massege{
+    width: 282px;
+    padding-bottom: 33px;
+  }
+
+
   .module-error__btn {
+    font-size: 21px;
     width: 273px;
   }
 }
