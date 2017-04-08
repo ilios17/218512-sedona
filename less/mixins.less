@@ -1,0 +1,45 @@
+.text-center() {
+  text-align: center;
+}
+
+.bg-color(@color) {
+  background-color: @color;
+}
+
+.font-bold() {
+  font-family: "PT Sans","Tahoma",  sans-serif;
+
+  font-weight: bold;
+}
+
+.font-normal() {
+  font-family: "PT Sans","Tahoma",  sans-serif;
+
+  font-weight: normal;
+}
+
+.uppercase() {
+  text-transform: uppercase;
+}
+
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1200px;
+  }
+}

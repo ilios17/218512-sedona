@@ -1,0 +1,151 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.feedback__header{
+  margin: 0 auto;
+  width: 320px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback__description{
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+
+  .font-normal();
+  .uppercase();
+  text-align: center;
+
+  color: @black-light;
+  padding-bottom: 17px;
+}
+
+.feedback__title{
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+
+  .font-bold();
+  .uppercase();
+  text-align: center;
+
+  color: @black;
+}
+
+.feedback__title {
+  margin-bottom: 7px;
+  margin-top: 38px;
+  text-align: center;
+}
+
+.feedback__btn-wrapper {
+  margin-left: 19px;
+  margin-top: 53px;
+  width: 280px;
+}
+
+.feedback__btn {
+  width: 100%;
+}
+
+.feedback__required{
+  display: none;
+}
+
+@media (min-width: 768px) {
+.feedback{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+  width: 648px;
+
+}
+.feedback__header{
+  order: -6;
+  padding-bottom: 57px;
+  width: 768px;
+  border-bottom: none;
+}
+.feedback__description{
+  width: 440px;
+}
+.feedback__title {
+  margin-top: 74px;
+  margin-bottom: 11px;
+  font-size: 30px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.feedback__instruction--decoration {
+  position: relative;
+  width: 100%;
+}
+
+.feedback__instruction--decoration::after,
+.feedback__instruction--decoration::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 25%;
+  height: 1px;
+  background: #dbdbdb;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.feedback__btn-wrapper {
+  margin-top: 60px;
+  margin-left: 0;
+  width: 324px;
+}
+
+.feedback__btn {
+  padding-right: 15px;
+}
+
+.feedback__required {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 77px;
+  margin-bottom: 0;
+  width: 324px;
+  font-size: 14px;
+  line-height: 26px;
+
+  .font-normal();
+  .uppercase();
+
+  color: @black-light;
+}
+}
+
+@media (min-width: 1200px){
+  .feedback{
+    margin-bottom: 66px;
+    width: 1200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feedback__header{
+    padding-bottom: 41px;
+    width: 1200px;
+  }
+
+  .feedback__title{
+    margin-top: 111px;
+  }
+  .feedback__btn-wrapper {
+    margin-top: 58px;
+    width: 480px;
+  }
+  .feedback__required {
+    width: 480px;
+}
+}

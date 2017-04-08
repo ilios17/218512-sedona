@@ -1,0 +1,128 @@
+.video-content {
+  width: 320px;
+  height: 201px;
+  position: relative;
+  background-image: url(../img/video-mobile@1x.jpg);
+  background-color: #81b3d2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+
+.video-content__control {
+  width: 280px;
+  height: 111px;
+  background: rgba(0,0,0,.6);
+  position: absolute;
+  bottom: -66px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.video-content__volume {
+  width: 100%;
+  height: 45px;
+}
+
+.video-content__volume-scale {
+  background: rgba(255,255,255,.2);
+  width: 235px;
+  height: 3px;
+  top: 22px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.video-content__volume-bar {
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3px;
+  left: 37px;
+}
+
+.video-content__btns {
+  background: #f2f2f2;
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.video-content__repeat,
+.video-content__subtitles,
+.video-content__full-screen {
+ fill: #5c6870;
+ border: none;
+ outline: none;
+ background: 0 0;
+ height: 20px;
+}
+
+.video-content__repeat{
+ margin-right: 100px;
+}
+
+@media (min-width: 768px) {
+  .video-content {
+    width: 648px;
+    height: 500px;
+    background-image: url(../img/video-tablet.jpg);
+  }
+  .video-content__control{
+    width: 100%;
+    height: 93px;
+    bottom: 0;
+  }
+  .video-content__volume{
+    height: 100%;
+  }
+  .video-content__volume-scale{
+    width: 389px;
+    top: 45px;
+    transform: translateX(0%);
+    left: 92px;
+  }
+  .video-content__volume-bar {
+    left: 112px;
+  }
+  .video-content__btns{
+    padding: 0 37px;
+    padding-left: 30px;
+    background: 0 0;
+    height: 93px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+  }
+  .video-content__repeat,
+  .video-content__subtitles,
+  .video-content__full-screen{
+    fill: @white;
+  }
+  .video-content__repeat{
+    margin-right: 443px;
+  }
+}
+@media (min-width: 1200px) {
+  .video-content{
+    width: 800px;
+    height: 500px;
+    background-image: url(../img/video-desktop.jpg);
+    margin-bottom: 84px;
+  }
+  .video-content__volume-scale{
+    width: 541px;
+  }
+  .video-content__repeat{
+    margin-right: 596px;
+  }
+}

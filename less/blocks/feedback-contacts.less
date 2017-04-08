@@ -1,0 +1,149 @@
+.feedback-contacts {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.feedback-contacts__description {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 26px;
+
+  .font-normal();
+  .uppercase();
+
+  color: @black-light;
+  &--email{
+    padding-left: 21px;
+  }
+}
+
+.feedback-contacts__container {
+  display: flex;
+  width: 280px;
+  justify-content: column;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.feedback-contacts__email{
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.feedback-contacts__error-phone {
+  padding-left: 21px;
+  font-size: 14px;
+  line-height: 26px;
+
+  .font-normal();
+
+  text-transform: none;
+  color: #ff5c5c;
+}
+
+@media (min-width: 768px) {
+  .feedback-contacts {
+    margin-bottom: 12px;
+    order: -3;
+    width: 648px;
+    border: none;
+  }
+  .feedback-contacts__wrapper {
+    width: 648px;
+  }
+  .feedback-contacts__container {
+    width: 648px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .feedback-contacts__phone,
+  .feedback-contacts__email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feedback-contacts__phone{
+    margin-bottom: 10px;
+  }
+
+  .feedback-contacts__phone{
+    justify-content: flex-end;
+  }
+.feedback-contacts__description {
+  order: -2;
+  flex-grow: 0;
+  padding-left: 11px;
+  padding-bottom: 8px;
+  &--email{
+    padding-left: 22px;
+  }
+  }
+}
+.feedback-contacts__error-phone {
+  order: -1;
+  flex-grow: 1;
+  text-align: right;
+}
+
+
+@media (min-width: 1200px){
+  .feedback-contacts {
+    margin-bottom: 26px;
+    width: 960px;
+ }
+.feedback-contacts__wrapper{
+  width: 960px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+.feedback-contacts__container{
+  width: 316px;
+  justify-content: baseline;
+  order: 3;
+ }
+.feedback-contacts__description {
+  order: 2;
+  flex-grow: 0;
+padding-left: 0;
+  &--hidden{
+    display: none;
+  }
+ }
+.feedback-contacts__error-phone {
+  order: 1;
+  width: 400px;
+  padding-left: 106px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  text-align: left;
+
+ }
+
+.feedback-contacts__phone,
+.feedback-contacts__email {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+ }
+.feedback-contacts__email{
+  width: 480px;
+  margin-top: 30px;
+  margin-bottom: 0;
+ }
+}

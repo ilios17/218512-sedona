@@ -1,0 +1,31 @@
+.social-links {
+  padding-left: 63px;
+  display: flex;
+  justify-content: space-between;
+  width: 151px;
+}
+
+.social-link {
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: @blue;
+
+  &--fb{
+    width: 47px;
+  }
+}
+
+.social-link__icon{
+  position: absolute;
+  fill: @white;
+  transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  top: 50%;
+}
+
+@media (min-width: 768px) {
+  .social-links{
+    padding: 0;
+  }
+}

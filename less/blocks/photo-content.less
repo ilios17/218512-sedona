@@ -1,0 +1,143 @@
+.photo-content {
+  position: relative;
+  padding: 23px 20px 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo-content__picture{
+  margin: 0;
+  overflow: hidden;
+}
+
+.photo-content__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+}
+
+.photo-content__text {
+
+}
+
+.photo-content__description {
+  padding-top: 13px;
+}
+
+.photo-content__name,
+.photo-content__like {
+ margin: 0;
+ font-size: 14px;
+ line-height: 24px;
+
+ .font-bold();
+ .uppercase();
+
+ color: @black;
+}
+
+.photo-content__author {
+ margin: 0;
+
+ font-size: 14px;
+ line-height: 24px;
+
+.font-normal();
+ color: @black-light;
+}
+
+.photo-content__like{
+ display: flex;
+ padding: 8px 0;
+}
+
+.photo-content__like-icon {
+  fill: #b2b2b2;
+  margin-right: 13px;
+}
+
+@media (min-width: 768px) {
+  .photo-content {
+    padding: 0;
+    width: 324px;
+    border: none;
+  }
+
+  .photo-content__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2;
+  }
+
+  .photo-content__description {
+    padding-top: 14px;
+    padding-left: 19px;
+    padding-bottom: 18px;
+   }
+
+   .photo-content__like{
+    padding-right: 27px;
+    &--bigger{
+      padding-right: 20px;
+    }
+    &--third{
+      padding-right: 36px;
+    }
+   }
+
+ .photo-content__image-container {
+   width: 324px;
+ }
+
+ .photo-content--bigger {
+   width: 648px;
+   .photo-content__wrapper{
+     width: 648px;
+   }
+   .photo-content__image-container{
+     width: 648px;
+   }
+ }
+
+ .photo-content__image {
+   display: block;
+   width: 100%;
+   height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-content{
+    width: 400px;
+  }
+
+  .photo-content__image-container{
+    width: 400px;
+  }
+
+  .photo-content--bigger {
+    width: 1200px;
+  }
+  .photo-content--bigger .photo-content__image-container {
+    width: 1200px;
+  }
+  .photo-content--last{
+    flex-grow: 0;
+  }
+  .photo-content__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+}
+  .photo-content__name,
+  .photo-content__like,
+  .photo-content__author{
+    color: @white;
+  }
+  .photo-content__like-icon{
+    fill: @white;
+  }
+
+}

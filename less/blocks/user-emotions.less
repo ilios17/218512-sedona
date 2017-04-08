@@ -1,0 +1,36 @@
+.user-emotions {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.user-emotions__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .user-emotions {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-emotions__wrapper{
+    margin: 0 auto;
+    width: 648px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .user-emotions {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .user-emotions__wrapper{
+    margin: 0 auto;
+    width: 960px;
+  }
+}
